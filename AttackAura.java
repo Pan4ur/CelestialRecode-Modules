@@ -19,6 +19,20 @@ import static a.AttackAura.HitBox.*;
 
 @Module.registerModule(name ="AttackAura", alias="Attack Aura", description="Бьет окружающих вас существ", category= ModuleCategory.COMBAT)
 public class AttackAura extends Module {
+    
+    
+    
+    
+    
+    
+    // https://youtu.be/h2nIkZZswq4?t=57  0:57 прям в тему XD
+    
+    
+    
+    
+    
+    
+    
     public static EntityLivingBase target;
     public static EntityLivingBase targetForTargetHud;
     public final BooleanSetting onlyWeapon = new BooleanSetting("Только с оружием", false);;
