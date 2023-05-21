@@ -106,7 +106,8 @@ public class AttackAura extends Module {
         for (EntityPlayer ent : AttackAura.mc.world.playerEntities) {
             if (!(ent instanceof EntityOtherPlayerMP)) continue;
             EntityOtherPlayerMP entityOtherPlayerMP2 = (EntityOtherPlayerMP) ent;
-            entityOtherPlayerMP2.releaseResolver();
+            entityOtherPlayerMP2.resolvePlayer();
+           
         }
     }
 
@@ -114,7 +115,7 @@ public class AttackAura extends Module {
         for (EntityPlayer ent : AttackAura.mc.world.playerEntities) {
             if (!(ent instanceof EntityOtherPlayerMP)) continue;
             EntityOtherPlayerMP entityOtherPlayerMP2 = (EntityOtherPlayerMP) ent;
-            entityOtherPlayerMP2.resolvePlayer();
+            entityOtherPlayerMP2.releaseResolver();
         }
     }
 
