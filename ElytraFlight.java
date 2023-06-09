@@ -162,7 +162,7 @@ extends Module {
         if (!bl3) {
             mc.player.connection.sendPacket(new CPacketHeldItemChange(n2));
         }
-        mc.player.connection.sendPacket(new CPacketPlayerTryUseItem(bl3 ? EnumHand.MAIN_HAND : EnumHand.OFF_HAND));
+        mc.player.connection.sendPacket(new CPacketPlayerTryUseItem(bl3 ? EnumHand.OFF_HAND : EnumHand.MAIN_HAND));
         if (!bl3) {
             mc.player.connection.sendPacket(new CPacketHeldItemChange(mc.player.inventory.currentItem));
         }
